@@ -50,15 +50,15 @@ text-align: center;
 text-align: center;
 }
 .estudante-imagem{
-width: 80px;
+width: 30px;
+height: auto;
 }
 .estudante-icone{
 width: 38px;
 padding: 4px 8px;
 }
 .estudante{
-background-image: background-color(#faae43);
-padding: 24px 0;
+    background-color: #faae43;
 }
 
 .estudante.div{
