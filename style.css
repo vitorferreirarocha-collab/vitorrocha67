@@ -10,10 +10,10 @@ header{
 background-color: #413734;
 color: #391c66;
 width: 100%;
-padding: 10px;
+padding: 20px;
 }
 .cabecalho-itens{
-max-width: 1000px;
+max-width: 1980px;
 margin: 0 auto;
 display: flex;
 align-items: center;
