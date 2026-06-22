@@ -92,4 +92,14 @@ padding: 12px 0;
 .link{
 color: #FF9B51;
 text-decoration: none;
+}.estudantes_todos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
+
+.estudante-div{
+    text-align: center;
+}
+
