@@ -5,6 +5,12 @@ box-sizing: border-box;
 }
 body{
 font-family: "Poppins", sans-serif;
+}body{
+    font-family: "Poppins", sans-serif;
+    background-image: url("WhatsApp Image 2026-06-12 at 19.13.53.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 header{
 background-color: #413734;
@@ -19,11 +25,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho-imagem{
-width: 10%;
-display: flex;
-justify-content: flex-start;
-align-items: center;
+.cabecalho_imagem{
+    width: 90px;
+    height: auto;
 }
 .titulo_site{
 padding: 50px;
@@ -50,7 +54,7 @@ text-align: center;
 text-align: center;
 }
 .estudante-imagem{
-width: 30px;
+width: 70px;
 height: auto;
 }
 .estudante-icone{
@@ -69,14 +73,10 @@ padding: 24px 0;
 display: flex;
 justify-content: space-around;
 }
-.escola{
-background-image: linear-gradient(#BFC9D1,#25343F);
-color: white;
-display: flex;
-justify-content:center;
-padding: 24px 0;
-text-align:center;
-display:block;
+.escola-image{
+    width: 60%;
+    max-width: 800px;
+    height: auto;
 }
 .escola-titulo{
 padding: 50px;
@@ -85,6 +85,7 @@ text-align: center;
 .logo_rodape{
 height: 80px;
 padding: 12px 0;
+
 
 }
 
