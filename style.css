@@ -5,13 +5,8 @@ box-sizing: border-box;
 }
 body{
 font-family: "Poppins", sans-serif;
-}body{
-    font-family: "Poppins", sans-serif;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+}body
+
 header{
 background-color: #413734;
 color: #391c66;
