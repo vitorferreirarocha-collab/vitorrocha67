@@ -15,10 +15,10 @@ body{
 }
 
 header{
-background-color: #616161;
-color: #414040;
+background-color: #00ccff;
+color: #013b32;
 width: 100%;
-padding: 20px;
+padding: 80px;
 }
 .cabecalho-itens{
 max-width: 1980px;
