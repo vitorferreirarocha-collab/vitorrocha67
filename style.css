@@ -1,4 +1,4 @@
-*{background-image: url("fundo-abstrato-escuro_1048-1920.avif");
+*{background-image: url("Design\ sem\ nome.png");
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -63,6 +63,7 @@ padding: 4px 8px;
 .estudante.div{
 text-align: center;
 padding: 24px 0;
+justify-content: space-around;
 }
 .estudantes_todos{
 display: flex;
@@ -89,7 +90,7 @@ color: #FF9B51;
 text-decoration: none;
 }.estudantes_todos{
     display: flex;
-    justify-content: center;
+    justify-content: align-items;
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -98,5 +99,6 @@ text-decoration: none;
     text-align: center;
 }
 body{
-    color: rgb(146, 0, 243);
+    color: rgb(255, 255, 255);
 }
+
