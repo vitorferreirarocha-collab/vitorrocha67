@@ -15,7 +15,7 @@ body{
 }
 
 header{
-background-color: #00ccff;
+background-color: #1f2b2e;
 color: #013b32;
 width: 100%;
 padding: 80px;
@@ -111,8 +111,8 @@ text-decoration: none;
     text-align: center;
 }
 body{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 76);
 }
 .escola{
-    color: white;
+    color: rgb(196, 16, 16);
 }
