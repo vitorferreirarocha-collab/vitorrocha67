@@ -1,10 +1,17 @@
-*{background-image: url("Design\ sem\ nome.png");
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body{
-font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    background-image: url("Design sem nome.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
 
 header{
