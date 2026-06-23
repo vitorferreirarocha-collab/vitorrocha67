@@ -111,8 +111,25 @@ text-decoration: none;
     text-align: center;
 }
 body{
-    color: rgb(255, 0, 76);
+    color: rgb(255, 208, 0);
 }
 .escola{
-    color: rgb(196, 16, 16);
+    color: rgb(177, 177, 177);
+}
+.sobre{
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.sobre h2{
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
 }
