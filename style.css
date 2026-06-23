@@ -28,8 +28,11 @@ align-items: center;
 justify-content: center;
 }
 .cabecalho_imagem{
-    width: 120px;
-    height: auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid gold;
 }
 .titulo_site{
     padding: 50px;
