@@ -57,7 +57,7 @@ width: 38px;
 padding: 4px 8px;
 }
 .estudante{
-    background-color: #000000;
+    background-color: #19007e;
 }
 
 .estudante.div{
@@ -86,7 +86,7 @@ padding: 12px 0;
 }
 
 .link{
-color: #ffffff;
+color: #ffaa00;
 text-decoration: none;
 }.estudantes_todos{
     display: flex;
