@@ -15,8 +15,8 @@ body{
 }
 
 header{
-background-color: #1f2b2e;
-color: #013b32;
+background-color: #24B1B1;
+color: #007979;
 width: 100%;
 padding: 80px;
 }
@@ -36,7 +36,7 @@ justify-content: center;
     text-align: center;
     width: 50%;
     font: 30px;
-    color: rgb(50, 252, 0);
+    color: rgb(255, 0, 98);
 }
 .sociais{
 display: flex;
