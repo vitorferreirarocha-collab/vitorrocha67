@@ -8,8 +8,8 @@ font-family: "Poppins", sans-serif;
 }body
 
 header{
-background-color: #413734;
-color: #391c66;
+background-color: #ffffff;
+color: #ffffff;
 width: 100%;
 padding: 20px;
 }
@@ -57,7 +57,7 @@ width: 38px;
 padding: 4px 8px;
 }
 .estudante{
-    background-color: #faae43;
+    background-color: #ffffff;
 }
 
 .estudante.div{
@@ -86,7 +86,7 @@ padding: 12px 0;
 }
 
 .link{
-color: #FF9B51;
+color: #ffffff;
 text-decoration: none;
 }.estudantes_todos{
     display: flex;
