@@ -39,7 +39,7 @@ justify-content: center;
     text-align: center;
     width: 50%;
     font: 30px;
-    color: rgb(255, 0, 98);
+    color: rgba(255, 225, 0, 0.852);
 }
 .sociais{
 display: flex;
