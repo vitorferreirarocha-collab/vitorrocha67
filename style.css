@@ -33,7 +33,10 @@ justify-content: center;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid gold;
+        /* Animação */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 .titulo_site{
     padding: 50px;
     text-align: center;
@@ -135,4 +138,7 @@ body{
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.6;
+}.cabecalho_imagem:hover{
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.6);
 }
