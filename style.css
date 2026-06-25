@@ -90,8 +90,12 @@ justify-content: center;
     cursor: pointer;
 }
 .estudante-icone{
-width: 38px;
-padding: 4px 8px;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    transition: transform 0.3s ease;
+}.estudante-icone:hover{
+    transform: scale(1.2);
 }
 .estudante{
     background-color: #19007e;
