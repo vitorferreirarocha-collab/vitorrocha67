@@ -47,22 +47,8 @@ justify-content: center;
 .sociais{
 display: flex;
 justify-content: flex-end;
-width: 45%;
-padding-right: 90px;
-}.sociais a{
-    display: inline-block;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}.sociais a:hover{
-    transform: translateY(-8px) scale(1.2);
-    filter: drop-shadow(0 0 10px gold);
-}.sociais img{
-    width: 90px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.sociais img:hover{
-    transform: rotate(10deg) scale(1.2);
-    filter: drop-shadow(0 0 10px gold);
+width: 25%;
+padding-right: 30px;
 }
 .banner1{
 display: flex;
@@ -90,12 +76,8 @@ justify-content: center;
     cursor: pointer;
 }
 .estudante-icone{
-    width: 60px;
-    height: 60px;
-    padding: 8px;
-    transition: transform 0.3s ease;
-}.estudante-icone:hover{
-    transform: scale(1.2);
+width: 38px;
+padding: 4px 8px;
 }
 .estudante{
     background-color: #19007e;
