@@ -44,19 +44,16 @@ justify-content: center;
     font: 60px;
     color: rgba(255, 225, 0, 0.852);
 }
-.sociais{
-display: flex;
-justify-content: flex-end;
-width: 25%;
-padding-right: 30px;
-.sociais a{
-    display: inline-block;
+.sociais img{
+    width: 40px;
     transition: transform 0.3s ease, filter 0.3s ease;
-}.sociais a:hover{
-    transform: translateY(-8px) scale(1.2);
+}
+
+.sociais img:hover{
+    transform: rotate(10deg) scale(1.2);
     filter: drop-shadow(0 0 10px gold);
 }
-}
+
 .banner1{
 display: flex;
 justify-content: center;
