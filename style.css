@@ -69,6 +69,11 @@ justify-content: center;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid gold;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}.estudante-imagem:hover{
+    transform: translateY(-12px) scale(1.08);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.7);
+    cursor: pointer;
 }
 .estudante-icone{
 width: 38px;
