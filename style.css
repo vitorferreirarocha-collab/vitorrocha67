@@ -160,11 +160,16 @@ body{
     padding: 40px 20px;
 }
 
+.video h2 {
+    margin-bottom: 20px;
+}
+
 .video iframe {
     display: block;
     margin: 0 auto;
     width: 80%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
+    border: none;
     border-radius: 15px;
 }
