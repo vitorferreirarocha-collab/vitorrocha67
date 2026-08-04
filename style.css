@@ -150,4 +150,18 @@ body{
 }.cabecalho_imagem:hover{
     transform: translateY(-15px) scale(1.05);
     box-shadow: 0 15px 30px rgba(255, 215, 0, 0.6);
+}.video {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video h2 {
+    margin-bottom: 20px;
+}
+
+.video iframe {
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
 }
