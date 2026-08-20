@@ -172,4 +172,28 @@ body{
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 15px;
+}nav {
+    background-color: #3d00a0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 18px 25px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    background-color: #ffd900;
+    color: #000;
 }
