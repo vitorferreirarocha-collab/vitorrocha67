@@ -44,14 +44,59 @@ justify-content: center;
     font: 60px;
     color: rgba(255, 225, 0, 0.852);
 }
-.sociais img{
-    width: 40px;
-    transition: transform 0.3s ease, filter 0.3s ease;
+.pagina-social {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.sociais img:hover{
-    transform: rotate(10deg) scale(1.2);
-    filter: drop-shadow(0 0 10px gold);
+.pagina-social h1 {
+    text-transform: uppercase;
+    color: #ffd900;
+    margin-bottom: 20px;
+}
+
+.pagina-social p {
+    text-align: center;
+    color: white;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.redes a {
+    width: 180px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.redes img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.redes span {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .banner1{
