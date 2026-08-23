@@ -1,31 +1,50 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vitor Rocha</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!--header é a parte do cabeçalho do site, é o topo da página-->
-<header class="cabecalho-itens">
-<img class="cabecalho_imagem" src="WhatsApp Image 2026-06-12 at 19.13.53.jpeg" alt=" Foto do vitor ">
-<h1 class="titulo_site">Vitor Rocha</h1>
-<div class="sociais">
-<img class="sociais" src="3670051.png" alt="Meu whatsapp">
-<img class="sociais" src="3955024.png" alt="Meu instagram">
-<img class="sociais" src="discord-round-color-icon.webp" alt="Meu discord">
-</div>
-</header>
 
-<footer class="escola">
-<img class="logo_rodape" src="" alt="">
-<h2 class="escola-título">Quer ter um atleta resenha de alta performance entre em contato<a class="link"
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="social.html">Social</a></li>
+            <li><a href="certificados.html">Certificados</a></li>
+        </ul>
+    </nav>
 
-href="https://wa.me/554167676969"> 41 9.967676969 </a></h2>
-<p></p>
-<p>©2026 | Vitão Rocha | Todos os Direitos Reservados.
-Política de Privacidade | Proteção de dados | Encarregado de dados</p>
-<p> </p>
-</footer>
+    <main class="pagina-contato">
+
+        <h1>ENTRE EM CONTATO</h1>
+
+        <p>
+            Preencha o formulário abaixo para entrar em contato comigo.
+        </p>
+
+        <form class="formulario">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6"
+                placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">ENVIAR</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
