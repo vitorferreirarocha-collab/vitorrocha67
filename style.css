@@ -381,44 +381,60 @@ main > h1 {
 }
 
 .pagina-sobre {
-    padding: 40px 20px;
+    padding: 50px 40px;
     text-align: center;
 }
 
 .pagina-sobre > h1 {
     color: #ffd900;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .sobre-conteudo {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 30px;
+    justify-content: center;
+    gap: 90px;
 }
 
 .foto-sobre {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #ffd900;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Animação da foto */
+
+.foto-sobre:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .texto-sobre {
+    max-width: 650px;
     text-align: left;
     color: white;
 }
 
 .texto-sobre h2 {
     color: #ffd900;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.texto-sobre h2:first-child {
+    margin-top: 0;
 }
 
 .texto-sobre p {
     font-size: 17px;
-    line-height: 1.6;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
