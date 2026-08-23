@@ -379,3 +379,46 @@ main > h1 {
     background-color: white;
     transform: scale(1.03);
 }
+
+.pagina-sobre {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.pagina-sobre > h1 {
+    color: #ffd900;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.sobre-conteudo {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.foto-sobre {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffd900;
+}
+
+.texto-sobre {
+    text-align: left;
+    color: white;
+}
+
+.texto-sobre h2 {
+    color: #ffd900;
+    margin-top: 20px;
+}
+
+.texto-sobre p {
+    font-size: 17px;
+    line-height: 1.6;
+}
