@@ -197,3 +197,65 @@ nav li a:hover {
     background-color: #ffd900;
     color: #000;
 }
+/* TÍTULO DOS CERTIFICADOS */
+
+main > h1 {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+
+/* ÁREA DOS CERTIFICADOS */
+
+.certificados {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+/* CADA CERTIFICADO */
+
+.certificado {
+    width: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.certificado:hover {
+    transform: translateY(-10px);
+}
+
+
+/* IMAGEM DO CERTIFICADO */
+
+.certificado img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* TÍTULO */
+
+.certificado h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* TEXTO */
+
+.certificado p {
+    font-size: 16px;
+}
