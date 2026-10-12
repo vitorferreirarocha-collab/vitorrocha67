@@ -15,7 +15,7 @@ body{
 }
 
 header{
-background-color: #1d004b;
+background-color: #00000000;
 color: #144848;
 width: 100%;
 padding: 80px;
@@ -290,7 +290,7 @@ main > h1 {
 .redes a {
     width: 180px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     text-decoration: none;
     color: white;
