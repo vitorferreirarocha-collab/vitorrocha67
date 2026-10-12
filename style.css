@@ -1,159 +1,148 @@
-*{
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+:root {
+    --roxo: #20002c;
+    --roxo-claro: #30203d;
+    --fundo-estudantes: #23202c;
+    --dourado: #ffd700;
+    --branco: #ffffff;
+    --cinza: #b1b1b1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("background\ 02.png");
+    background-image: url("background 02.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
+    color: var(--branco);
+    min-height: 100vh;
 }
 
-header{
-background-color: #00000000;
-color: #144848;
-width: 100%;
-padding: 80px;
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+header {
+    background-color: transparent;
+    color: var(--branco);
+    width: 100%;
+    padding: 40px 20px;
 }
-.cabecalho-itens{
-max-width: 1980px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
+
+.cabecalho-itens {
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-.cabecalho_imagem{
+
+.cabecalho_imagem {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid gold;
-        /* Animação */
+    border: 3px solid var(--dourado);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.titulo_site{
-    padding: 50px;
-    text-align: center;
-    width: 50%;
-    font: 60px;
-    color: rgba(255, 225, 0, 0.852);
+.cabecalho_imagem:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.6);
 }
-.sociais img{
+
+.titulo_site {
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: var(--dourado);
+    overflow-wrap: anywhere;
+}
+
+/* ========================================
+   ÍCONES SOCIAIS DO CABEÇALHO
+======================================== */
+
+.sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sociais img {
     width: 40px;
+    height: 40px;
+    object-fit: contain;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.sociais img:hover{
+.sociais img:hover {
     transform: rotate(10deg) scale(1.2);
-    filter: drop-shadow(0 0 10px gold);
+    filter: drop-shadow(0 0 10px var(--dourado));
 }
 
-.banner1{
-display: flex;
-justify-content: center;
-}
-.estudante_titulo{
-    padding: 50px;
-    text-align: center;
-    color: gold;
-}
-.estudante-nome{
-    text-align: center;
-    color: #FFD700; /* dourado */
-}
-.estudante-imagem{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid gold;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}.estudante-imagem:hover{
-    transform: translateY(-12px) scale(1.08);
-    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.7);
-    cursor: pointer;
-}
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
-}
-.estudante{
-    background-color: #23202c;
+/* ========================================
+   BANNER
+======================================== */
+
+.banner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.estudante.div{
-text-align: center;
-padding: 24px 0;
-justify-content: space-around;
-}
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
-}
-.escola-image{
+.escola-image {
     width: 60%;
     max-width: 800px;
     height: auto;
-}
-.escola-titulo{
-padding: 50px;
-text-align: center;
-}
-.logo_rodape{
-height: 80px;
-padding: 12px 0;
-
-
+    border-radius: 12px;
 }
 
-.link{
-color: #ffaa00;
-text-decoration: none;
-}.estudantes_todos{
-    display: flex;
-    justify-content: align-items;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+/* ========================================
+   SEÇÃO SOBRE MIM
+======================================== */
 
-.estudante-div{
+.sobre {
     text-align: center;
-}
-body{
-    color: rgb(255, 208, 0);
-}
-.escola{
-    color: rgb(177, 177, 177);
-}
-.sobre{
-    text-align: center;
-    padding: 50px;
-    color: white;
+    padding: 50px 20px;
+    color: var(--branco);
 }
 
-.sobre h2{
-    color: gold;
+.sobre h2 {
+    color: var(--dourado);
     margin-bottom: 20px;
+    font-size: 32px;
 }
 
-.sobre p{
+.sobre p {
     max-width: 800px;
     margin: 0 auto;
     font-size: 18px;
-    line-height: 1.6;
-}.cabecalho_imagem:hover{
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.6);
-}.video {
-    text-align: center;
-    padding: 40px 20px;
+    line-height: 1.8;
 }
+
+/* ========================================
+   VÍDEO
+======================================== */
 
 .video {
     text-align: center;
@@ -161,6 +150,7 @@ body{
 }
 
 .video h2 {
+    color: var(--dourado);
     margin-bottom: 20px;
 }
 
@@ -172,40 +162,164 @@ body{
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 15px;
-}nav {
-    background-color: #220125;
+}
+
+/* ========================================
+   SEÇÃO DOS ESTUDANTES
+======================================== */
+
+.estudante {
+    background-color: var(--fundo-estudantes);
+    padding: 20px 20px 35px;
+}
+
+.estudante_titulo {
+    padding: 30px 10px;
+    text-align: center;
+    color: var(--dourado);
+    font-size: 30px;
+}
+
+.estudantes_todos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.estudante-div {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.estudante-imagem {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--dourado);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.estudante-imagem:hover {
+    transform: translateY(-12px) scale(1.08);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.7);
+    cursor: pointer;
+}
+
+.estudante-nome {
+    text-align: center;
+    color: var(--dourado);
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.estudante-icone {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.estudante-icone:hover {
+    transform: scale(1.15);
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer.escola {
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.logo_rodape {
+    height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 12px 0;
+}
+
+.escola-título {
+    padding: 15px 0;
+    text-align: center;
+    color: var(--branco);
+    font-size: 22px;
+}
+
+.escola p {
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.link {
+    color: var(--dourado);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: var(--branco);
+}
+
+/* ========================================
+   MENU DE NAVEGAÇÃO
+======================================== */
+
+nav {
+    background-color: var(--roxo);
+    width: 100%;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--roxo);
 }
 
-nav li a {
+nav ul li a {
     display: block;
-    color: white;
+    color: var(--branco);
     text-decoration: none;
     padding: 18px 25px;
     font-family: Arial, sans-serif;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav li a:hover {
-    background-color: #ffd900;
-    color: #000;
+nav ul li a:hover {
+    background-color: var(--dourado);
+    color: var(--roxo);
 }
-/* TÍTULO DOS CERTIFICADOS */
+
+/* ========================================
+   TÍTULOS DAS PÁGINAS
+======================================== */
 
 main > h1 {
     text-align: center;
+    text-transform: uppercase;
+    color: var(--dourado);
     margin: 40px 0 30px;
+    padding: 0 15px;
 }
 
-
-/* ÁREA DOS CERTIFICADOS */
+/* ========================================
+   CERTIFICADOS
+======================================== */
 
 .certificados {
     display: flex;
@@ -216,28 +330,21 @@ main > h1 {
     padding: 20px;
 }
 
-
-/* CADA CERTIFICADO */
-
 .certificado {
     width: 450px;
-    background-color: white;
+    max-width: 100%;
+    background-color: var(--branco);
+    color: #222222;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
+    transition: transform 0.3s ease;
 }
-
-
-/* EFEITO AO PASSAR O MOUSE */
 
 .certificado:hover {
     transform: translateY(-10px);
 }
-
-
-/* IMAGEM DO CERTIFICADO */
 
 .certificado img {
     width: 100%;
@@ -245,24 +352,23 @@ main > h1 {
     border-radius: 10px;
 }
 
-
-/* TÍTULO */
-
 .certificado h2 {
+    color: var(--roxo);
     font-size: 20px;
     margin-top: 15px;
 }
 
-
-/* TEXTO */
-
 .certificado p {
+    color: #333333;
     font-size: 16px;
-}main > h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 40px 0 30px;
+    margin-top: 10px;
+    line-height: 1.6;
 }
+
+/* ========================================
+   PÁGINA SOCIAL
+======================================== */
+
 .pagina-social {
     text-align: center;
     padding: 40px 20px;
@@ -270,37 +376,40 @@ main > h1 {
 
 .pagina-social h1 {
     text-transform: uppercase;
-    color: #ffd900;
+    color: var(--dourado);
     margin-bottom: 20px;
 }
 
 .pagina-social p {
     text-align: center;
-    color: white;
+    color: var(--branco);
+    line-height: 1.7;
 }
 
 .redes {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    align-items: stretch;
+    gap: 30px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .redes a {
     width: 180px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(32, 0, 44, 0.85);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 15px;
     text-decoration: none;
-    color: white;
+    color: var(--branco);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .redes a:hover {
     transform: translateY(-10px);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--roxo-claro);
 }
 
 .redes img {
@@ -316,19 +425,26 @@ main > h1 {
     margin-top: 15px;
     font-size: 20px;
     font-weight: bold;
-}.pagina-contato {
+}
+
+/* ========================================
+   PÁGINA DE CONTATO
+======================================== */
+
+.pagina-contato {
     text-align: center;
     padding: 40px 20px;
 }
 
 .pagina-contato h1 {
-    color: #ffd900;
+    color: var(--dourado);
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
 .pagina-contato p {
-    color: white;
+    color: var(--branco);
+    line-height: 1.7;
 }
 
 .formulario {
@@ -336,7 +452,8 @@ main > h1 {
     max-width: 90%;
     margin: 40px auto;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(32, 0, 44, 0.85);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -344,13 +461,14 @@ main > h1 {
 }
 
 .formulario label {
-    color: white;
+    color: var(--branco);
     text-align: left;
     font-weight: bold;
 }
 
 .formulario input,
 .formulario textarea {
+    width: 100%;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -360,6 +478,12 @@ main > h1 {
 
 .formulario textarea {
     resize: vertical;
+    min-height: 120px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid var(--dourado);
 }
 
 .formulario button {
@@ -367,18 +491,22 @@ main > h1 {
     padding: 12px;
     border: none;
     border-radius: 8px;
-    background-color: #ffd900;
-    color: #000;
+    background-color: var(--dourado);
+    color: var(--roxo);
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .formulario button:hover {
-    background-color: white;
+    background-color: var(--branco);
     transform: scale(1.03);
 }
+
+/* ========================================
+   PÁGINA SOBRE
+======================================== */
 
 .pagina-sobre {
     padding: 50px 40px;
@@ -386,9 +514,9 @@ main > h1 {
 }
 
 .pagina-sobre > h1 {
-    color: #ffd900;
+    color: var(--dourado);
     text-transform: uppercase;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .sobre-conteudo {
@@ -397,34 +525,33 @@ main > h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 .foto-sobre {
     width: 320px;
     height: 320px;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #ffd900;
-
+    border: 4px solid var(--dourado);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Animação da foto */
-
 .foto-sobre:hover {
     transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.4);
 }
 
 .texto-sobre {
     max-width: 650px;
     text-align: left;
-    color: white;
+    color: var(--branco);
 }
 
 .texto-sobre h2 {
-    color: #ffd900;
+    color: var(--dourado);
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -439,36 +566,187 @@ main > h1 {
     margin-bottom: 15px;
 }
 
+/* ========================================
+   PÁGINA DO JOGO
+======================================== */
 
-/* Padronizar as cores do rodapé e do menu */
-
-footer.escola {
-    background-color: #353535;
-    color: #ffffff;
-    padding: 25px 20px;
+.pagina-jogo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-footer.escola h2,
-footer.escola p {
-    color: #272727;
+.pagina-jogo h1,
+.pagina-jogo h2 {
+    color: var(--dourado);
+    margin-bottom: 20px;
 }
 
-footer.escola a {
-    color: #ffd700;
+.pagina-jogo p {
+    color: var(--branco);
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
-nav {
-    background-color: #20002c;
+.pagina-jogo iframe {
+    display: block;
+    width: 100%;
+    min-height: 600px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--roxo);
 }
 
-nav ul {
-    background-color: #20002c;
+.pagina-jogo a {
+    color: var(--dourado);
+    text-decoration: none;
 }
 
-nav ul li a {
-    color: #ffffff;
+.pagina-jogo a:hover {
+    color: var(--branco);
 }
 
-nav ul li a:hover {
-    color: #ffd700;
+/* ========================================
+   ADAPTAÇÃO PARA CELULARES
+======================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    .cabecalho-itens {
+        gap: 20px;
+    }
+
+    .cabecalho_imagem {
+        width: 160px;
+        height: 160px;
+    }
+
+    .titulo_site {
+        width: 100%;
+        padding: 10px;
+        font-size: 36px;
+    }
+
+    .sociais img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .banner1 {
+        padding: 10px;
+    }
+
+    .escola-image {
+        width: 100%;
+    }
+
+    .sobre {
+        padding: 35px 20px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+
+    .estudantes_todos {
+        gap: 20px;
+    }
+
+    .estudante-imagem {
+        width: 140px;
+        height: 140px;
+    }
+
+    .escola-título {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+
+    .certificado {
+        width: 100%;
+    }
+
+    .redes {
+        gap: 20px;
+    }
+
+    .redes a {
+        width: 140px;
+    }
+
+    .redes img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .pagina-sobre {
+        padding: 35px 20px;
+    }
+
+    .sobre-conteudo {
+        gap: 30px;
+    }
+
+    .foto-sobre {
+        width: 230px;
+        height: 230px;
+    }
+
+    .texto-sobre {
+        text-align: center;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .pagina-jogo {
+        padding: 25px 12px;
+    }
+
+    .pagina-jogo iframe {
+        min-height: 650px;
+    }
+}
+
+/* ========================================
+   CELULARES PEQUENOS
+======================================== */
+
+@media (max-width: 400px) {
+
+    .titulo_site {
+        font-size: 28px;
+    }
+
+    .estudante-imagem {
+        width: 120px;
+        height: 120px;
+    }
+
+    .estudante-nome {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        padding: 12px 9px;
+        font-size: 13px;
+    }
+
+    .redes a {
+        width: 125px;
+    }
 }
