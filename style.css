@@ -762,3 +762,22 @@ main > h1 {
         width: 125px;
     }
 }
+
+
+/* Banner com efeito hover */
+.escola-image {
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+
+    /* Transição suave */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efeito ao passar o mouse */
+.escola-image:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.4);
+    cursor: pointer;
+}
