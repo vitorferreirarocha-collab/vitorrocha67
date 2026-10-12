@@ -443,14 +443,14 @@ main > h1 {
 /* Padronizar as cores do rodapé e do menu */
 
 footer.escola {
-    background-color: #20002c;
+    background-color: #353535;
     color: #ffffff;
     padding: 25px 20px;
 }
 
 footer.escola h2,
 footer.escola p {
-    color: #ffffff;
+    color: #272727;
 }
 
 footer.escola a {
