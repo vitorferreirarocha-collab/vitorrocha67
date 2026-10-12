@@ -438,3 +438,37 @@ main > h1 {
     line-height: 1.8;
     margin-bottom: 15px;
 }
+
+
+/* Padronizar as cores do rodapé e do menu */
+
+footer.escola {
+    background-color: #20002c;
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+footer.escola h2,
+footer.escola p {
+    color: #ffffff;
+}
+
+footer.escola a {
+    color: #ffd700;
+}
+
+nav {
+    background-color: #20002c;
+}
+
+nav ul {
+    background-color: #20002c;
+}
+
+nav ul li a {
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
