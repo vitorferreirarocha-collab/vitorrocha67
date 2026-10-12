@@ -748,3 +748,14 @@ main > h1 {
         width: 125px;
     }
 }
+
+footer.escola {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+nav,
+nav ul {
+    background-color: #000000;
+}
+
