@@ -1,6 +1,6 @@
 
 /* ========================================
-   CONFIGURAÇÕES GERAIS
+   1. CONFIGURAÇÕES GERAIS
 ======================================== */
 
 * {
@@ -10,9 +10,9 @@
 }
 
 :root {
+    --preto: #000000;
     --roxo: #20002c;
     --roxo-claro: #30203d;
-    --fundo-estudantes: #23202c;
     --dourado: #ffd700;
     --branco: #ffffff;
     --cinza: #b1b1b1;
@@ -22,21 +22,19 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #000000;
-    color: #ffffff;
+    background: var(--preto);
+    color: var(--branco);
     min-height: 100vh;
 }
 
-
 /* ========================================
-   CABEÇALHO
+   2. CABEÇALHO
 ======================================== */
 
 header {
-    background-color: transparent;
+    background-color: var(--preto);
     color: var(--branco);
     width: 100%;
     padding: 40px 20px;
@@ -75,7 +73,7 @@ header {
 }
 
 /* ========================================
-   ÍCONES SOCIAIS DO CABEÇALHO
+   3. REDES SOCIAIS DO CABEÇALHO
 ======================================== */
 
 .sociais {
@@ -83,6 +81,12 @@ header {
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+
+.sociais a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sociais img {
@@ -98,7 +102,41 @@ header {
 }
 
 /* ========================================
-   BANNER
+   4. MENU DE NAVEGAÇÃO
+======================================== */
+
+nav {
+    background-color: var(--preto);
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--preto);
+}
+
+nav ul li a {
+    display: block;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 18px 25px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--dourado);
+    color: var(--preto);
+}
+
+/* ========================================
+   5. BANNER
 ======================================== */
 
 .banner1 {
@@ -106,6 +144,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: var(--preto);
 }
 
 .escola-image {
@@ -116,13 +155,14 @@ header {
 }
 
 /* ========================================
-   SEÇÃO SOBRE MIM
+   6. SEÇÃO SOBRE MIM
 ======================================== */
 
 .sobre {
     text-align: center;
     padding: 50px 20px;
     color: var(--branco);
+    background-color: var(--preto);
 }
 
 .sobre h2 {
@@ -139,12 +179,13 @@ header {
 }
 
 /* ========================================
-   VÍDEO
+   7. VÍDEO
 ======================================== */
 
 .video {
     text-align: center;
     padding: 40px 20px;
+    background-color: var(--preto);
 }
 
 .video h2 {
@@ -163,11 +204,12 @@ header {
 }
 
 /* ========================================
-   SEÇÃO DOS ESTUDANTES
+   8. OS TRÊS MAIORES
 ======================================== */
 
 .estudante {
-    background-color: var(--fundo-estudantes);
+    background-color: var(--preto);
+    color: var(--branco);
     padding: 20px 20px 35px;
 }
 
@@ -228,11 +270,11 @@ header {
 }
 
 /* ========================================
-   RODAPÉ
+   9. RODAPÉ
 ======================================== */
 
 footer.escola {
-    background-color: var(--roxo);
+    background-color: var(--preto);
     color: var(--branco);
     padding: 25px 20px;
     text-align: center;
@@ -270,41 +312,7 @@ footer.escola {
 }
 
 /* ========================================
-   MENU DE NAVEGAÇÃO
-======================================== */
-
-nav {
-    background-color: var(--roxo);
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: var(--roxo);
-}
-
-nav ul li a {
-    display: block;
-    color: var(--branco);
-    text-decoration: none;
-    padding: 18px 25px;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: var(--dourado);
-    color: var(--roxo);
-}
-
-/* ========================================
-   TÍTULOS DAS PÁGINAS
+   10. TÍTULOS DAS PÁGINAS
 ======================================== */
 
 main > h1 {
@@ -316,7 +324,7 @@ main > h1 {
 }
 
 /* ========================================
-   CERTIFICADOS
+   11. CERTIFICADOS
 ======================================== */
 
 .certificados {
@@ -326,14 +334,16 @@ main > h1 {
     gap: 30px;
     flex-wrap: wrap;
     padding: 20px;
+    background-color: var(--preto);
 }
 
 .certificado {
     width: 450px;
     max-width: 100%;
-    background-color: var(--branco);
-    color: #222222;
+    background-color: #111111;
+    color: var(--branco);
     padding: 20px;
+    border: 1px solid #333333;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -351,25 +361,26 @@ main > h1 {
 }
 
 .certificado h2 {
-    color: var(--roxo);
+    color: var(--dourado);
     font-size: 20px;
     margin-top: 15px;
 }
 
 .certificado p {
-    color: #333333;
+    color: var(--branco);
     font-size: 16px;
     margin-top: 10px;
     line-height: 1.6;
 }
 
 /* ========================================
-   PÁGINA SOCIAL
+   12. PÁGINA SOCIAL
 ======================================== */
 
 .pagina-social {
     text-align: center;
     padding: 40px 20px;
+    background-color: var(--preto);
 }
 
 .pagina-social h1 {
@@ -396,8 +407,8 @@ main > h1 {
 .redes a {
     width: 180px;
     padding: 20px;
-    background-color: rgba(32, 0, 44, 0.85);
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    background-color: #111111;
+    border: 1px solid #333333;
     border-radius: 15px;
     text-decoration: none;
     color: var(--branco);
@@ -426,12 +437,13 @@ main > h1 {
 }
 
 /* ========================================
-   PÁGINA DE CONTATO
+   13. PÁGINA DE CONTATO
 ======================================== */
 
 .pagina-contato {
     text-align: center;
     padding: 40px 20px;
+    background-color: var(--preto);
 }
 
 .pagina-contato h1 {
@@ -450,8 +462,8 @@ main > h1 {
     max-width: 90%;
     margin: 40px auto;
     padding: 30px;
-    background-color: rgba(32, 0, 44, 0.85);
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    background-color: #111111;
+    border: 1px solid #333333;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -490,7 +502,7 @@ main > h1 {
     border: none;
     border-radius: 8px;
     background-color: var(--dourado);
-    color: var(--roxo);
+    color: var(--preto);
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -503,12 +515,13 @@ main > h1 {
 }
 
 /* ========================================
-   PÁGINA SOBRE
+   14. PÁGINA SOBRE
 ======================================== */
 
 .pagina-sobre {
     padding: 50px 40px;
     text-align: center;
+    background-color: var(--preto);
 }
 
 .pagina-sobre > h1 {
@@ -565,7 +578,7 @@ main > h1 {
 }
 
 /* ========================================
-   PÁGINA DO JOGO
+   15. PÁGINA DO JOGO
 ======================================== */
 
 .pagina-jogo {
@@ -573,6 +586,7 @@ main > h1 {
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
+    background-color: var(--preto);
 }
 
 .pagina-jogo h1,
@@ -593,7 +607,7 @@ main > h1 {
     min-height: 600px;
     border: none;
     border-radius: 16px;
-    background-color: var(--roxo);
+    background-color: var(--preto);
 }
 
 .pagina-jogo a {
@@ -606,7 +620,7 @@ main > h1 {
 }
 
 /* ========================================
-   ADAPTAÇÃO PARA CELULARES
+   16. ADAPTAÇÃO PARA CELULARES
 ======================================== */
 
 @media (max-width: 768px) {
@@ -721,7 +735,7 @@ main > h1 {
 }
 
 /* ========================================
-   CELULARES PEQUENOS
+   17. CELULARES PEQUENOS
 ======================================== */
 
 @media (max-width: 400px) {
@@ -748,14 +762,3 @@ main > h1 {
         width: 125px;
     }
 }
-
-footer.escola {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-nav,
-nav ul {
-    background-color: #000000;
-}
-
